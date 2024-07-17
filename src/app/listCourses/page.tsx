@@ -34,7 +34,8 @@ const CourseSelection: React.FC = () => {
 
   const fetchAvailableCourses = async () => { 
     fetch(`/api/listCourses`, {
-      method: "GET"
+      method: "GET",
+      body: sessionStorage.getItem("username"),
     })
       .then((res) => res.json())
       .then((res) => {

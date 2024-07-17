@@ -24,6 +24,7 @@ const Login: React.FC = () => {
       .then((res) => {
           if (Number(res.code) === 0) {
               alert(username + "你好鸭，欢迎来贵系!");
+              sessionStorage.setItem("username", username);
               router.push(`/adminCourses`);
           }
           else {
