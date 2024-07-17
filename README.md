@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## 作业说明
+
+- 实现与Django作业对接的React前端，api文档详见后端views.py中的注释
+- 代码的大部分框架都已经搭好了，你只需要完成TODO部分要求你完成的内容即可
+- BONUS部分是附加题，不过难度也不高，感兴趣的同学可以试试
+- 作业很简单，大部分代码都已经写好了，实际上本人编写该作业只花了大概一下午的时间，因此本作业难度不高，相信大家能够顺利完成
+
 ## Getting Started
 
 First, run the development server:
@@ -8,10 +15,6 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
