@@ -2,7 +2,7 @@
 
 // CourseSelection.tsx
 import React, { useState, useEffect } from 'react';
-import { List, Pagination, message, Button } from 'antd';
+import { List, Pagination, message, Button, Input } from 'antd';
 import 'antd/dist/reset.css';
 import styles from './page.module.css';
 
@@ -100,12 +100,12 @@ const CourseSelection: React.FC = () => {
 
 
       <div className={styles.logoutButton}>
-        <Button type="default" onClick={handleUpload} block>
+        <Input type="file" onChange={handleUpload}>
           上传
-        </Button>
-        <Button type="default" onClick={handleDownload} block>
+        </Input>
+        <Input type="file" onChange={handleDownload}>
           下载
-        </Button>
+        </Input>
         <Button type="default" onClick={handleLogout} block>
           登出
         </Button>
